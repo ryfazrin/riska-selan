@@ -30,6 +30,9 @@ html {
 	height: 100%;
 }
 
+/* play button */
+
+
 .explodeSvg {
 	animation: explodeSvg 3s infinite;
 }

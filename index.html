@@ -9,10 +9,24 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/valentine-heart.css" />
-  <title>Riska Sellan</title>
+  <title>Riska Selan</title>
 </head>
 <body>
+	<!-- <audio src="music/bentuk-cinta.mp3" autoplay>
+		<p>If you are reading this, it is because your browser does not support the audio element.</p>
+	</audio> -->
 	<main class="capitalize">
+		<section id="play">
+			<div class="grid grid-cols-2 h-screen text-center bg-red-500 font-primary text-white">
+				<div class="col-span-2 text-xl grid items-center p-1">
+					<span>Kalo abis liriknya, klik <span class="bg-white text-red-500 p-1">Next <i class="fa fa-play" aria-hidden="true"></i></span></span>
+					<br>
+					<span>apa lagi? Yaudah Play aja</span>
+					<a href="#one" onclick="play()"><img data-aos="fade-down" class="mx-auto" src="img/play-btn.svg"></a>
+				</div>
+					<audio id="audio" src="music/bentuk-cinta-full.ogg" type="audio/ogg" controls autoplay hidden="true"></audio>
+			</div>
+		</section>
 		<section id="one">
 			<div class="grid grid-cols-2 h-screen text-center font-primary">
 				<div class="col-span-2 text-5xl text-blue-600 font-fondamento grid items-center"><span data-aos="fade-down">Pernahkah<br>Kau Bertanya?</span></div>
@@ -139,7 +153,7 @@
 				<div class="col-span-1 grid items-center p-2"><img class="mx-auto w-full" src="img/end/couple.svg"></div>
 				<div class="col-span-2 bg-red-400 text-white grid items-center"><img class="mx-auto w-40" src="img/end/family.svg"></div>
 				<div class="col-span-2 bg-red-400 text-white grid items-center">
-					<a href="#one"><button class="w-full font-primary h-full text-xl">Play Again <i class="fa fa-play" aria-hidden="true"></i></button></a>
+					<a href="#one" onclick="play()"><button class="w-full font-primary h-full text-xl">Play Again <i class="fa fa-play" aria-hidden="true"></i></button></a>
 				</div>
 			</div>
 		</section>

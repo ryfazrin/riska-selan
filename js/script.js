@@ -41,6 +41,14 @@
 // // Get the element with id="defaultOpen" and click on it
 // document.getElementById("tab-1").style.display = "block";
 
+// audio
+function play() {
+	var audio = document.getElementById("audio");
+	audio.play();
+}
+
+
+
 // Animate On Scroll Library : https://michalsnik.github.io/aos/
 AOS.init({
   delay: 200,
