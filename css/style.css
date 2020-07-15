@@ -18,6 +18,12 @@
 
 html {
   scroll-behavior: smooth;
+  /*overflow:hidden;*/
+}
+
+.tabcontent {
+    display: none;
+    animation: fadeEffect 1s; 
 }
 
 .full div {
@@ -69,4 +75,10 @@ html {
     25%  {transform : translateX(25%); }
     75%  {transform : translateX(-25%); }
     to   {transform : translateX(0); }
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
