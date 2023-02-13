@@ -1,29 +1,54 @@
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
 .bgoverlay{
-  position: absolute;
+  position: relative;
+  /* background-color: rgba(0,0,0,0.5); */
+  /* display: grid;
+  grid-template-columns: 1fr; */
+}
+
+.anima1 {
+  animation: explode 2s infinite;
+}
+
+.anima2 {
+  animation: explodeSmall 2s infinite;
 }
 
 .ico{
   display: block;
 }
+
 .open .ico{
   animation: open 4s;
   transform: scale(10);
 }
 
-.ico:before,
-.ico2:before,
-.ico2:after{
+.ico:before{
   position: absolute;
-  top: 10px;
-  left: 20px;
-
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background-color: rgba(0,0,0,0.5); */
+  /* top: 0px;
+  left: 20px; */
+ /* background-color: rgba(0,0,0,0.5);
+ grid-row-start: 1;
+ grid-column-start: 1; */
 }
+
+.ico2:before,
+.ico3:before{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .ico:before,
 .ico2:before,
-.ico2:after{
+.ico3:before{
   display: block;
-  font-size: 150px;
+  font-size: 100px;
   color: #e53e3e;
   /*color: #ff4081;*/
   content: "\f004";
@@ -35,13 +60,16 @@
 
 .ico:before{
   z-index: 3;
+  /* animation: explodeSmall 3s infinite; */
 }
 
 .ico2:before{
-  animation: explodeSmall 3s infinite;
+  z-index: 4;
+  /* animation: explodeSmall 3s infinite; */
 }
-.ico2:after{
-  animation: explodeSmall 2s infinite;
+.ico3:before{
+  z-index: 5;
+  /* animation: explodeSmall 2s infinite; */
 }
 
 @keyframes explode {
