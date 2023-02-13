@@ -9,14 +9,14 @@ function play() {
 
     let currentTime = Math.floor(audio.currentTime);
     if (
-      Math.floor(audio.currentTime) === 8 || 
-      Math.floor(audio.currentTime) === 18 ||
-      Math.floor(audio.currentTime) === 23 ||
-      Math.floor(audio.currentTime) === 28 ||
-      Math.floor(audio.currentTime) === 32 /*33 */  ||
-      Math.floor(audio.currentTime) === 37  ||
-      Math.floor(audio.currentTime) === 40 ||
-      Math.floor(audio.currentTime) === 44
+      currentTime === 8 || 
+      currentTime === 18 ||
+      currentTime === 23 ||
+      currentTime === 28 ||
+      currentTime === 32 /*33 */  ||
+      currentTime === 37  ||
+      currentTime === 40 ||
+      currentTime === 44
     ) {
       scrollToBottom()
     }
