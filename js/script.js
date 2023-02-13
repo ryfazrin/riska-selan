@@ -3,14 +3,34 @@ let audio = document.getElementById("audio");
 // audio
 function play() {
 	audio.play();
-  audio.ontimeupdate = (event) => {
+  setInterval(() => {
     let audioTime = document.getElementById("audioTime");
     audioTime.innerHTML = audio.currentTime;
-    if (Math.floor(audio.currentTime) === 8) {
+
+    let currentTime = Math.floor(audio.currentTime);
+    if (
+      Math.floor(audio.currentTime) === 8 || 
+      Math.floor(audio.currentTime) === 18 ||
+      Math.floor(audio.currentTime) === 23 ||
+      Math.floor(audio.currentTime) === 28 ||
+      Math.floor(audio.currentTime) === 32 /*33 */  ||
+      Math.floor(audio.currentTime) === 37  ||
+      Math.floor(audio.currentTime) === 40 ||
+      Math.floor(audio.currentTime) === 44
+    ) {
       scrollToBottom()
     }
     console.log('The currentTime attribute has been updated. Again.');
-  };
+  }, 1000)
+
+  // audio.ontimeupdate = (event) => {
+  //   let audioTime = document.getElementById("audioTime");
+  //   audioTime.innerHTML = audio.currentTime;
+  //   if (Math.floor(audio.currentTime) === 8) {
+  //     scrollToBottom()
+  //   }
+  //   console.log('The currentTime attribute has been updated. Again.');
+  // };
   // scrollToBottom(2000);
 }
 
