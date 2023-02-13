@@ -21,6 +21,11 @@ html {
   /*overflow:hidden;*/
 }
 
+section {
+    height: 100vh !important;
+    margin: 0 !important;
+}
+
 .tabcontent {
     display: none;
     animation: fadeEffect 1s; 
