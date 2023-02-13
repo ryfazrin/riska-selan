@@ -26,5 +26,5 @@ function scrollToBottom(timedelay=0) {
 }
 
 // setInterval(() => {
-// scrollToBottom(2000)
+scrollToBottom(2000)
 // }, 1000)

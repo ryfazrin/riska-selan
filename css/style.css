@@ -21,6 +21,16 @@ html {
   /*overflow:hidden;*/
 }
 
+/* body {
+    overflow: hidden; /* Hide scrollbars
+} */
+/* 
+
+main {
+    overflow: auto;
+    height: 100%;
+} */
+
 section {
     height: 100vh !important;
     margin: 0 !important;
