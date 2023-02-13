@@ -10,13 +10,15 @@ AOS.init({
   duration: 1000
 });
 
-function scrollToBottom(timedelay=0) {
-  var scrollId;
-  var height = 0;
-  var minScrollHeight = screen.height;
+function scrollToBottom(timedelay = 0) {
+  let scrollId;
+  let height = 0;
+  let minScrollHeight = window.innerHeight; // 100vh
+  
   scrollId = setInterval(function () {
       if (height <= document.body.scrollHeight) {
           window.scrollBy(0, minScrollHeight);
+          console.log(minScrollHeight);
       }
       else {
           clearInterval(scrollId);
