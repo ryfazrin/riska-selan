@@ -4,8 +4,8 @@ let audio = document.getElementById("audio");
 function play() {
 	audio.play();
   setInterval(() => {
-    let audioTime = document.getElementById("audioTime");
-    audioTime.innerHTML = audio.currentTime;
+    // let audioTime = document.getElementById("audioTime");
+    // audioTime.innerHTML = audio.currentTime;
 
     let currentTime = Math.floor(audio.currentTime);
     if (
@@ -34,15 +34,15 @@ function play() {
   // scrollToBottom(2000);
 }
 
-let audioPause = document.getElementById("audioPause");
-audioPause.onclick = (event) => {
-  audio.pause();
-}
+// let audioPause = document.getElementById("audioPause");
+// audioPause.onclick = (event) => {
+//   audio.pause();
+// }
 
-let audioPlay = document.getElementById("audioPlay");
-audioPlay.onclick = (event) => {
-  audio.play();
-}
+// let audioPlay = document.getElementById("audioPlay");
+// audioPlay.onclick = (event) => {
+//   audio.play();
+// }
 
 // Animate On Scroll Library : https://michalsnik.github.io/aos/
 AOS.init({
